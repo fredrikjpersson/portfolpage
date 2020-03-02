@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Siccors</h1>
+    </header>
+    <!--The Scoore board-->
+    <div class="score-board">
+       <div id="user-lable" class="badge">user</div> 
+       <div id="computer-lable" class="badge">comp</div> 
+       <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+        <p>Paper covers rock, You Win!</p>
+    </div>
+<!--Adding the images-->
+    <div class="choises">
+            <div class="choise" id="r">
+                <img src="images/Rock.png" alt="">
+            </div>
+            <div class="choise" id="p">
+                <img src="images/Paper.png" alt="">
+            </div>
+            <div class="choise" id="s">
+                <img src="images/Scissor.png" alt="">
+            </div>
+
+    </div>
+    
+    <p id="action-message">Make your move!</p>
+   <!-- <audio id="audio" src="Sound.wav"></audio>-->
+    <!-- Linking in the JAvascript file-->
+    <script src="app.js" charset="utf-8"></script>
+    
+</body>
+</html>

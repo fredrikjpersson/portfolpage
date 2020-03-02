@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+    <loc>http://www.fredrikjpersson.com/index.html</loc>
+    <lastmod>2019-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+</url>
+<url>
+    <loc>http://www.fredrikjpersson.com/gallery.html</loc>
+    <lastmod>2019-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+</url>
+<url>
+    <loc>http://www.fredrikjpersson.com/bookmarks.html</loc>
+    <lastmod>2019-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+</url>
+
+</urlset>
