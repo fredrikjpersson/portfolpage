@@ -1,100 +1,91 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-
-<title>FjP</title>
-<link rel="stylesheet" href="style.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
-</head>
-<body>
-<div id="menubar">
-        <ul>
-            <li id="men1" style="color: rgb(122, 187, 248)">Start</li>
-            <li id="men2"><a href="gallery.html">Portfolio</a></li>
-            <li id="men3"><a href="bookmarks.html">Bookmarks</a></li>
-            <li id="men4"><a href="about.html">About</a></li>
-            
-        </ul>
-</div>
- <div id="mainindex"> 
-
-
-
-    <div class="bio">
-        <div class="pic1"><img src="sitt-c1.png" width="80%"><br><h3 id="sig">Fredrik J Persson</h3></div>
-        <div class="bio1"><h2>My philosophy</h2><br>
-                    
-            Everybody is perfect including ME.<br>  
-            
-            By that I don&apos;t mean that anyone is better than anyone else what I mean is.<br>
-            
-            If anyone tried being me they would not be better than me at it.
-            So don&apos;t compare yourself to others, there is no point. <br><br>
-            
-            We should all strive to be better than ourselves not others. We should improve our skills and our knowledge not to trumph others or belittling our fellow people but to be able to help or lift others if it be needed. One of the strongest acts you can do for your self is to ask for help, acknowledging that you need others is hard.
-            
-            Im my path through life, I have tried to improve myself to be better prepared at helping myself and others. It docent matter if it is in real life issues or if it is in there digital evolution.</div>
+  <head>
+    <title>C&F Digital</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div id="menubar">
+      <ul>
+        <li id="men1" style="color: rgb(122, 187, 248)">Start</li>
+        <li id="men2"><a href="gallery.html">Portfolio</a></li>
+        <li id="men3"><a href="bookmarks.html">Bookmarks</a></li>
+        <li id="men4"><a href="about.html">About</a></li>
+      </ul>
     </div>
-        
-        
-        
-</div>
+    <div id="mainindex">
+      <div class="bio">
+        <div class="pic1">
+          <img src="pic/LogoDark.png" width="80%" /><br />
+          <h3 id="sig">C & F Digital</h3>
+        </div>
+        <div class="bio1">
+          <h2>Our Philosophy</h2>
+          <br />
 
-<script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("jul 2, 2021 15:37:25").getTime();
+          Everybody is perfect including ME.<br />
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+          By that I don&apos;t mean that anyone is better than anyone else what I mean is.<br />
 
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
-  }
-}, 1000);</script>
+          If anyone tried being me they would not be better than me at it. So don&apos;t compare yourself to others, there is no point. <br /><br />
 
-   
+          We should all strive to be better than ourselves not others. We should improve our skills and our knowledge not to trumph others or belittling our fellow people but to be
+          able to help or lift others if it be needed. One of the strongest acts you can do for your self is to ask for help, acknowledging that you need others is hard. Im my path
+          through life, I have tried to improve myself to be better prepared at helping myself and others. It docent matter if it is in real life issues or if it is in there
+          digital evolution.
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Jan 1, 2024 00:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+
     <footer class="contact">
-        <ul id="blist">
-            <li>Fredrik Persson</li>
-            <li>
-                    <a href="http://www.facebook.com/Fredrik74P" class="fa fa-facebook"></a>   
-                    <a href="https://twitter.com/fredrik74p" class="fa fa-twitter"></a>
-                    <a href="https://se.linkedin.com/in/fredrik-persson-65353b175" class="fa fa-linkedin"></a>
-                    <a href="https://www.instagram.com/fredriksphoto/" class="fa fa-instagram"></a>
-                    <a href="https://www.snapchat.com/add/fredrik74p?fbclid=IwAR0t9dzoeAirOmBmvOeqFSOCFaDTCgHPh1kLX2PNK0jQ20HcreSb3EIA914" class="fa fa-snapchat-ghost"></a>
-                    <a href="https://www.flickr.com/photos/freper/" class="fa fa-flickr"></a>
-                    
-            </li>
-            <li><a href="sitemaplinks.html">Sitemap</a></li>
-            <li><a href="mailto:fredrik.persson@cmeducations.se">Send mail</a></li>
-            <li><a href="#"><div id="countdown"></div></a></li>
-         </ul>
-    </footer> 
-    
-
-    
-</body>
-
+      <ul id="blist">
+        <li>C & F Digital</li>
+        <li>
+          <!-- <a href="http://www.facebook.com/Fredrik74P" class="fa fa-facebook"></a> -->
+          <!-- <a href="https://twitter.com/fredrik74p" class="fa fa-twitter"></a> -->
+          <!-- <a href="https://se.linkedin.com/in/fredrik-persson-65353b175" class="fa fa-linkedin"></a> -->
+          <!-- <a href="https://www.instagram.com/fredriksphoto/" class="fa fa-instagram"></a> -->
+          <!-- <a href="https://www.snapchat.com/add/fredrik74p?fbclid=IwAR0t9dzoeAirOmBmvOeqFSOCFaDTCgHPh1kLX2PNK0jQ20HcreSb3EIA914" class="fa fa-snapchat-ghost"></a> -->
+          <!-- <a href="https://www.flickr.com/photos/freper/" class="fa fa-flickr"></a> -->
+        </li>
+        <!-- <li><a href="sitemaplinks.html">Sitemap</a></li> -->
+        <li><a href="mailto:fredrix@ifourc.one">Fredrik</a></li>
+        <li><a href="mailto:felixz@ifourc.one">Fredrik</a></li>
+        <li><a href="mailto:christoffe@ifourc.one">Christoffer</a></li>
+        <li>
+          <a href="#"><div id="countdown"></div></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
