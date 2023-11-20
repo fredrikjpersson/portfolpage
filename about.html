@@ -4,11 +4,16 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="menubar">
       <ul>
-        <li id="men1"><a href="index.html">Start</a></li>
+        <li id="men1">
+          <a href="index.html"><img src="pic/Small Black Logo.png" width="50px" height="50" style="border-radius: 50%" /></a>
+        </li>
         <li id="men3"><a href="gallery.html">Portfolio</a></li>
         <li id="men3"><a href="bookmarks.html">Bookmarks</a></li>
         <li id="men4" style="color: rgb(122, 187, 248)">About</li>
@@ -17,27 +22,27 @@
     <div id="mainabout">
       <div class="picture">
         <div class="picture1">
-          <img src="pic/christoffer.jpg" width="350px" height="350" style="border-radius: 50%" />
+          <img src="pic/christoffer.jpg" width="50%" height="auto" style="border-radius: 50%; margin: auto" />
           Christoffer
         </div>
         <div class="picture1">
-          <img src="pic/jag.png" width="350px" height="350" />
+          <img src="pic/jag.png" width="50%" height="auto" style="border-radius: 50%; margin: auto" />
           Fredrik
         </div>
       </div>
       <div class="biotxt">
-        <h2>Fredrik</h2>
+        <h2>Christoffer</h2>
         <p>
-          I was born in 1974 in the month of June and have sins that day, had time to get 4 kids, been fulltime employed for 20 years. and part time emplyed for additional 5 years.
-          During that time I have lived in 2 diffrent cities and been married 12 years.
+          Once upon a time, there was a young programmer named Christoffer. He was passionate about coding and loved to experiment with new programming languages and frameworks. He
+          spent most of his free time tinkering with code, building new applications, and learning new skills. One day, while browsing the internet, he stumbled upon a new
         </p>
         <p>More to come.</p>
       </div>
       <div class="history">
-        <h2>Christoffer</h2>
+        <h2>Fredrik</h2>
         <p>
-          I was born in 1974 in the month of June and have sins that day, had time to get 4 kids, been fulltime employed for 20 years. and part time emplyed for additional 5 years.
-          During that time I have lived in 2 diffrent cities and been married 12 years.
+          Once upon a time, there was a programmer named Fredrik. He had been coding for a long time and loved it. He was a code boomer. Just like Christoffer, Fredrik was
+          passionate about coding and loved to experiment with new programming languages and frameworks. He spent most of his free time tinkering with code, building new
         </p>
         <p>More to come.</p>
       </div>
@@ -55,12 +60,40 @@
         </li>
         <!-- <li><a href="sitemaplinks.html">Sitemap</a></li> -->
         <li><a href="mailto:fredrix@ifourc.one">Fredrik</a></li>
-        <li><a href="mailto:felixz@ifourc.one">Fredrik</a></li>
         <li><a href="mailto:christoffe@ifourc.one">Christoffer</a></li>
+        <li><a href="mailto:felixz@ifourc.one">Felixz(Collaborator)</a></li>
         <li>
           <a href="#"><div id="countdown"></div></a>
         </li>
       </ul>
     </footer>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Dec 24, 2023 00:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
   </body>
 </html>
